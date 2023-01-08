@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WE BUILD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background: f1fbff;
+        }
+
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        .carousel-item {
+            height: 100vh;
+            min-height: 300px;
+        }
+
+        .carousel-caption {
+            bottom: 220px;
+            z-index: 2;
+        }
+
+        .carousel-caption h5 {
+            font-size: 45px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 25px;
+        }
+
+        .carousel-caption p {
+            width: 60%;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        .carousel-inner::before {
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            z-index: 1;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .navbar-nav a {
+            font-size: 16px;
+            font-weight: 200;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .w-100 {
+            height: 100vh;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .navbar-nav {
+                text-align: center;
+            }
+
+            .carousel-caption {
+                bottom: 125px;
+            }
+
+            .carousel-caption h5 {
+                font-size: 15px;
+            }
+
+            .carousel-caption p {
+                width: 100%;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><span class="text-warning"><b>CONSTRUCTION</span>SITE</a></b>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="home-3.jpg" class="d-block w-100" alt="HOME3">
+                <div class="carousel-caption">
+                    <h5>PROPER CONSTRUCTION</h5>
+                    <p> The construction buildings that meet the needs of society and stimulate the economy, but with higher
+                        environmental performance, especially in terms of and water efficiency</p>
+                    <a href="#" class="btn btn-warning mt-3">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="home-1.jpg" class="d-block w-100" alt="HOME1">
+                <div class="carousel-caption">
+                    <h5>YOUR DREAM HOUSE</h5>
+                    <p>Build your dream house with "The Construction Sites"!</p>
+                    <a href="#" class="btn btn-warning mt-3">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="home-2.jpg" class="d-block w-100" alt="HOME2">
+                <div class="carousel-caption">
+                    <h5>ALWAYS DEDICATED</h5>
+                    <p>A team of Creative, Enthusiastic, Hardworking people totally dedicated towards their visions!</p>
+                    <a href="#" class="btn btn-warning mt-3">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="about-img">
+                        <img src="about-us.jpg" alt="ABOUT" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="about-text">
+                        <h2>We provide best and proper <b>CONSTRUCTION EVER</b></h2>
+                        <p>Started the "Construction Sites" in 1990 with a purpose to help people build the most
+                            beautiful buildings, houses etc! The purpose behind starting the "Construction Sites" was to
+                            let
+                            people understand the beauty of living in a place where it feels so much positive from
+                            inside the place.
+                            The construction Sites provides a positive and sustainable structure to live in.</p>
+                        <a href="" class="btn btn-warning">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2> OUR SERVICES</h2>
+                        <p>We provide services such as Designs, architecture, build, structures, constructions!
+                            Since 1990, we have build more than 500 strcutures across the wrold. We are highly
+                            enthusiastic group of people
+                            who have been working day and night to make sure that our customers get a good structure to
+                            live in.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-success pb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">HOUSES CONSTRUCTION</h3>
+                            <p class="lead">Since 1990, we have build more than 500 strcutures across the wrold. We build houses with any strcture.
+                                We have experienced engineers who give their time to make sure that the design and place is perfect! We provide different
+                                designs and structures to our customers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-success pb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">BUILDINGS CONSTRUCTION</h3><br>
+                            <p class="lead">Since 1990, we have build more than 500 strcutures across the wrold. We
+                                build buildings with any strcture.
+                                We have experienced engineers who give their time to make sure that the design and place
+                                is perfect!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-success pb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">HOME RENT POLICY</h3><br>
+                            <p class="lead">We at The Construction Sites provide their customer rental appartments also.
+                                The rent here begins according to the needs of the customer. We also provide good enough
+                                time to our customer to pay the rent! We provide different
+                                designs to our customers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+    <section id="services" class="services-section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2> OUR VALUES</h2>
+                        <p>We have always believed in teamwork and hardwork a lot! Our values should forever match our
+                            actions and work!
+                            We believe that if we are in unity then the work is not only completed in less time but in
+                            an efficient way!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-secondary pb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">SUSTAINABIITY</h3>
+                            <p class="lead">
+                                “The construction industry must embrace more sustainable forms of building. This means
+                                buildings that meet the needs of society and stimulate the economy, but with higher
+                                environmental performance, especially in terms of and water efficiency".</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-secondary pb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">UNITY</h3>
+                            <p class="lead">
+                                Teamwork makes the dream work, but a vision becomes a nightmare when the leader
+                                has big dreams and bad team. As you experience changes and breakthroughs, know that
+                                integrity, honesty and truth are the highest vibrating energies to guide you forward.
+                                Everything else will fall away</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-secondary pb-2">
+                        <div class="card-body">
+                            <h3 class="card-title">INTEGRITY</h3>
+                            <p class="lead">“Creating a culture of integrity and accountability not only improves
+                                effectiveness, it also generates a respectful, enjoyable and life-giving setting in
+                                which to work. Six essential qualities that are the key to success: Sincerity, personal
+                                integrity, humility, courtesy, wisdom, charity.”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+    <section id="portfolio" class="portfolio section-">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center ph-5">
+                        <h2>Our Projects</h2>
+                        <p>Since 1990, we have build more than 500 strcutures across the wrold. We are highly
+                            enthusiastic group of people
+                            who have been working day and night to make sure that our customers get a good structure to
+                            live in. Here are our three major projects
+                            .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-white ph-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="project-1.jpg" alt="project1" class="img-fluid">
+                            </div>
+                            <h3 class="card-title">Unique Walls</h3>
+                            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus libero
+                                officia inventore? A facere ex corporis, doloribus maiores, voluptatibus non voluptate
+                                corrupti exercitationem voluptatum aperiam est, veniam sed velit eveniet?</p>
+                            <button class="btn bg-warning text-dark">LEARN MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-white ph-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="project-2.jpg" alt="project2" class="img-fluid">
+                            </div>
+                            <h3 class="card-title">Buildings</h3>
+                            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus libero
+                                officia inventore? A facere ex corporis, doloribus maiores, voluptatibus non voluptate
+                                corrupti exercitationem voluptatum aperiam est, veniam sed velit eveniet?</p>
+                            <button class="btn bg-warning text-dark">LEARN MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-white ph-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="project-3.jpg" alt="project3" class="img-fluid h-100 ">
+                            </div>
+                            <h3 class="card-title">Houses</h3>
+                            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus libero
+                                officia inventore? A facere ex corporis, doloribus maiores, voluptatibus non voluptate
+                                corrupti exercitationem voluptatum aperiam est, veniam sed velit eveniet?</p>
+                            <button class="btn bg-warning text-dark">LEARN MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section id="team" class="team section-">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center ph-5">
+                        <h2>Our Team</h2>
+                        <p>Our team is a group of creative, enthusiastic, encouraging, inspired and highly motivated
+                            people!
+                            Our team members are not only highly qualified people but also really hardworking!
+                            Have a look at our HR, Manager and Instructor. If you want to connect with them, please
+                            comment down bellow.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-white ph-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="team-2.jpg" alt="team2" class="img-fluid">
+                            </div><br>
+                            <h3 class="card-title">HR</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-white ph-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="team-3.jpg" alt="team3" class="img-fluid">
+                            </div>
+                            <h3 class="card-title">Manager</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-white ph-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="team-4.jpg" alt="team4" class="img-fluid">
+                            </div>
+                            <h3 class="card-title">Instructor</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+    <section id="contact" class="contact sect-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center ph-5">
+                        <h2>CONTACT</h2>
+                        <p>We have always loved to get the feedback from our customers.Its always a pleasure! Please
+                            feel free to comment down
+                            your ideas or suggestions. Also if you have taken our services, please share us your
+                            experience!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-md-12 p-0 pt-4 pt-4 m-auto">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" required placeholder="Your full name">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <input type="email" class="form-control" required placeholder="Your valid email">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <textarea rows="3" required class="form-control"
+                                    placeholder="Your query here"></textarea>
+                            </div>
+                        </div>
+                        <button class="btn btn-warning btn-lg btn-block mt-3">SEND NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5  bg-black text-white">
+                <h3>Anushka Kalpund</h3>
+                <h5>Owner of Construction Sites Company</h5>
+                <br>
+                <p>Started the "Construction Sites" in 1990 with a purpose to help people build the most
+                    beautiful buildings, houses etc! The purpose behind starting the "Construction Sites" was to let
+                    people understand the beauty of living in a place where it feels so much positive from inside the
+                    place.
+                </p>
+            </div>
+            <div class="col-sm-3 bg-black text-white">
+                <h3>Contact</h3>
+                <p>9000222888</p>
+                <p>anushkakalpund@gmail.com</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="22"
+                    height="33" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="22"
+                    height="33" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="22"
+                    height="33" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="3" y="5" width="18" height="14" rx="4" />
+                    <path d="M10 9l5 3l-5 3z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="22"
+                    height="33" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                    <circle cx="12" cy="12" r="3" />
+                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="22" height="33"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="white" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <polyline points="3 7 12 13 21 7" />
+                </svg>
+            </div>
+            <div class="col-sm-4 bg-black text-white">
+                <p>Direction</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15128.141285816608!2d73.81880045!3d18.57244625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf4aab3ecf61%3A0x1c28cc07831147dc!2sOld%20Sangvi%2C%20Pimpri-Chinchwad%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1672247299256!5m2!1sen!2sin"
+                    width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</body>
+
+</html>
